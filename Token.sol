@@ -12,7 +12,7 @@ contract Token {
   uint public constant rate = 0;  // rate of token / wei for purchase
   uint256 private totalSupply_;
   mapping (address => uint256) public balances_;//maps the address to the balance.
-  mapping (address => uint256) public checkoutmap_;//maps the address to the valid checkou time
+  mapping (address => uint256) public checkoutmap_;//maps the address to the valid checkout time
   //creates a reference to know that a specific address (account) has a specific blance.
   
   event Transfer(address indexed from, address indexed to, uint value);
@@ -49,7 +49,7 @@ contract Token {
 function checkin(address student) returns (bool)
 {
     uint256 time= now;
-    uint256 timeout= time + 10 seconds;
+    uint256 timeout= time + 10 seconds; //modify time from 10 seconds
     checkoutmap_[student]=timeout; 
     return true;
 }
