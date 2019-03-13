@@ -1,1 +1,2 @@
-# Education that makes cents!
+# EduCents
+Education that makes cents
