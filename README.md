@@ -1,1 +1,1 @@
-# INCENTIVIZING EDUCATION
+# Education that makes cents!
